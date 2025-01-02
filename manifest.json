@@ -1,0 +1,27 @@
+
+{
+    "name":"Auto Accept HR",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "description":"Either used to notify a new Request OR Auto assign new Request",
+    "permissions":["activeTab","storage"],
+    "action":{
+        "default_popup":"popup.html"
+    },
+    "background":{
+        "service_worker":"background.js"
+    },
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["content.js"]
+        }
+    ],
+    "web_accessible_resources":[
+        {
+            "resources":["assets/alerts.mp3"],
+            "matches":["<all_urls>"]
+        }
+    ]
+
+}
