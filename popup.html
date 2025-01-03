@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,4 +20,46 @@
     <button id="stopBtn">Stop</button>
     <script src="popup.js"></script>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Accept Request</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo Section -->
+      <div class="logo-container">
+        <img src="assets/logo_128x128.png" alt="Logo" />
+      </div>
+
+      <!-- Header Section -->
+      <h1>Auto Accept Request</h1>
+      <p>Automatically accept live help requests in your work pool.</p>
+
+      <!-- Input Section -->
+      <h3>Refresh Time (secs)</h3>
+      <input
+        type="number"
+        id="refreshTime"
+        min="1"
+        placeholder="Enter the refresh time"
+      />
+
+      <!-- Checkbox Section -->
+      <div class="checkbox-group">
+        <input type="checkbox" id="autoAssignCheckbox" />
+        <label for="autoAssignCheckbox">Auto Assign Request</label>
+      </div>
+
+      <!-- Button Section -->
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
 </html>
