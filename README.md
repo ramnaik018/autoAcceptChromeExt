@@ -6,6 +6,9 @@ Auto Accept HR is a Chrome extension that automates the process of accepting VHR
 ## Installation Guide
 
 ### Step 1: Clone the Repository
+To begin, clone the repository to your local machine by running the following command:
+
+`git clone https://github.com/ramnaik018/autoAcceptChromeExt`
 
 ### Step 2: Load the Extension in Chrome
 
